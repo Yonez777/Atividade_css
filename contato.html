@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="estilo.css" media="screen" />
+</head>
+<body>
+    <main id="mmain">
+        <nav>
+            <section class="logo">
+
+            </section>
+            <section id="titulo">
+                <h2>Bibliotech</h2>
+            </section>
+            <ul>
+                <li><a href="index.html" target="_top" title="">INÍCIO</a></li>
+                <li><a href="sobre.html" target="_top" title="">SOBRE</a></li>
+                <li><a href="contato.html" target="_top" title="">CONTATO</a></li>
+            </ul>
+        </nav>
+
+    <h2 align="center">Centro de suporte da Bibliotech</h2>
+    <p align="center">Não se preocupe, não divulgaremos nenhum de seus dados:)</p>
+
+<table id="tb">
+    <tr><td>
+            <fieldset>
+                <legend> Por favor, informe seus dados: </legend>
+                <form action="enviar.php" method="post" name="cadastro">
+                    <table>
+                        <tr>
+                            <td><label> Email: </label></td>
+                            <td><input type="email" id="email" name="email" size="40" placeholder="Digite o seu email" required /></td>
+                        </tr>
+                        <tr>
+                            <td><label> Telefone: </label></td>
+                            <td><input type="text" id="telefone" name="telefone" size="40" maxlength="11" placeholder="Digite seu telefone (apenas números)" required/></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><label>Descreva resumidamente o motivo do suporte:</label></td>
+                        </tr>
+                        <tr>
+                            <td align="center" colspan="2"><textarea cols="100" rows="5" id="coment" name="coment" placeholder="Digite aqui" required></textarea></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" align="center"><label>Gostaria de receber nossas notificações via email?</label></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" align="center"><label>
+                            <input type="radio" id="notificacao" name="notificacao" value="Sim" required/> Sim
+                            </label>
+                            <label>
+                            <input type="radio" id="notificacao" name="notificacao" value="Não" /> Não
+                            </td></tr>
+                        </label>
+                        <tr>
+                            <th colspan="2">
+                                <input type="submit" id="enviar" name="enviar" value="ENVIAR DADOS" />
+                                <input type="reset" id="limpar" name="limpar" value="LIMPAR" />
+                            </th>
+                        </tr>
+
+                    </table>
+                </form>
+            </fieldset>
+    </td></tr>
+</table>
+
+<footer id="foot">
+    <p>Copyright © 2022-2023 Luizão.com.br LTDA.</p>
+</footer>
+
+</main>
+</body>
+</html>
